@@ -10,10 +10,6 @@ body{
 /* Jormungandr twists and turns
  mighty in his wrath.  */
 
- figure img{
-  height:500px;
-  max-height: 500px;
- }
  .control-button img{
   height: 95px;
   max-height: 95px;
@@ -22,29 +18,35 @@ body{
  }
 /*  Style Tile Markup  */
 
+.center{
+  text-align: center;
+}
 h1{
   font-family: UnifrakturCook, Garamond, sans-serif;
   color: #222;
-}
+  font-size: 2em;
 }
 h2{
   font-family: "Droid Serif", "Baskerville Old Face", Times, serif;
   color: #077;
+  font-size: 1.5em;
 }
 h3{
   font-family: Cuprum, Futura, sans-serif;
   color: darkgreen;
+  font-size: 1.25em;
 }
-p{
+p, li{
   font-family: Lora, times, serif;
   color: #633;
+  font-size: 1em;
   }
 a:link, a:visited{
   text-decoration: none;
-  color: #DA0;
+  color: #A00;
 }
 a:hover, a:focus{
-  color: #0DA;
+  color: #00A;
 }
 
 /* Gallery Stying
@@ -65,7 +67,7 @@ Ben Schwarz*/
   position: relative;
 }
 .gallery .item {
-  height: 500px;
+  max-height:500px;
   overflow: hidden;
   text-align: center;
   background: url("../img/crossword.png");
@@ -87,9 +89,31 @@ Ben Schwarz*/
   font-size: 3em;
   text-align: center;
   text-decoration: none;
+  -webkit-transition: color .1s;
+  -moz-transition: color .1s;
+  -ms-transition: color .1s;
+  -o-transition: color .1s;
   transition: color .1s;
 }
-
+.height{
+  height: 90px;
+}
+nav{
+    background: #333;
+    position: fixed;
+    padding: 10px 0px 10px 0px;
+    width: 100%;
+    max-width: 1000px;
+}
+nav li {
+  display: inline;
+  margin: 0 20px;
+}
+nav a:link, 
+nav a:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+}
 
 /* Show Grid */
 
@@ -103,6 +127,11 @@ figure {
 figure h3, figure p{
   position: absolute;
   margin: 0;
+  transition: top .4s, bottom .5s .5s, opacity .5s;
+  -moz-transition: top .4s, bottom .5s .5s, opacity .5s;
+  -webkit-transition: top .4s, bottom .5s .5s, opacity .5s;
+  -ms-transition: top .4s, bottom .5s .5s, opacity .5s;
+  -o-transition: top .4s, bottom .5s .5s, opacity .5s;
   transition: top .4s, bottom .5s .5s, opacity .5s;
 }
 figure h3{
@@ -127,15 +156,20 @@ figure:hover h3{
   top: 0px;
   opacity: 100;
 }
-.end p,.end h3{
-    width: 375px;
+.end p,.end h3, .end img{
+    width: 100%;
+    max-width: 375px;
 }
-.mag p,.mag h3{
-    width: 364px;
+.mag p,.mag h3, .mag img{
+    width: 100%;
+    max-width: 364px;
+    margin:auto;
 }
-.rand p,.rand h3{
-  width: 700px;
+.rand p,.rand h3, .rand img{
+  width: 100%;
+  max-width: 700px;
 }
-.intr p,.intr h3{
-  width: 386px;
+.intr p,.intr h3, .intr img{
+  width: 100%;
+  max-width: 386px;
 }
