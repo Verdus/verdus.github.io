@@ -22,12 +22,12 @@ body{
   text-align: center;
 }
 h1{
-  font-family: UnifrakturCook, Garamond, sans-serif;
+  font-family: Cuprum, Futura, sans-serif;
   color: #222;
   font-size: 2em;
 }
 h2{
-  font-family: "Droid Serif", "Baskerville Old Face", Times, serif;
+  font-family: Lora, times, serif;
   color: #077;
   font-size: 1.5em;
 }
@@ -39,7 +39,7 @@ h3{
 p, li{
   font-family: Lora, times, serif;
   color: #633;
-  font-size: 1em;
+  font-size: 1em/1.5em;
   }
 a:link, a:visited{
   text-decoration: none;
@@ -96,7 +96,6 @@ Ben Schwarz*/
   transition: color .1s;
 }
 nav{
-    background-color: #777;
     padding: 10px 0px 10px 0px;
     width: 100%;
     max-width: 1000px;
