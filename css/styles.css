@@ -10,12 +10,6 @@ body{
 /* Jormungandr twists and turns
  mighty in his wrath.  */
 
- .control-button img{
-  height: 95px;
-  max-height: 95px;
-  width: 95px;
-  max-width: 95px;
- }
 /*  Style Tile Markup  */
 
 .center{
@@ -49,52 +43,6 @@ a:hover, a:focus{
   color: #444;
 }
 
-/* Gallery Stying
-Ben Schwarz*/
-.gallery .control-button {
-  color: #ccc;
-  color: rgba(255, 255, 255, 0.4);
-}
-
-.gallery .control-button:hover,.gallery .control-button:focus {
-  color: white;
-  color: rgba(255, 255, 255, 0.8);
-}
-/*
-	Theme controls how everything looks in Gallery CSS.
-*/
-.gallery {
-  position: relative;
-}
-.gallery .item {
-  max-height:500px;
-  overflow: hidden;
-  text-align: center;
-  background: url("../img/crossword.png");
-}
-.gallery .controls {
-  position: absolute;
-  bottom: -120px;
-  width: 100%;
-  text-align: center;
-}
-
-.gallery .controls img {
-  border: 5px solid #000;
-}
-
-.gallery .control-button {
-  display: inline-block;
-  margin: 0 .02em;
-  font-size: 3em;
-  text-align: center;
-  text-decoration: none;
-  -webkit-transition: color .1s;
-  -moz-transition: color .1s;
-  -ms-transition: color .1s;
-  -o-transition: color .1s;
-  transition: color .1s;
-}
 nav{
     padding: 10px 0px 10px 0px;
     width: 100%;
@@ -118,94 +66,32 @@ nav a:visited {
 /* Show Grid */
 
 button{
-  background: grey;
-  color: #fff;
   border-radius: .25em;
   border: 0px;
+  background: #ccc;
+   text-transform: uppercase;
+   text-decoration: none;
+     font-family: Lora, times, serif;
 }
 
-/* Transition markup */
-
-figure h3, figure p{
-  position: absolute;
-  margin: 0;
-  transition: top .4s, bottom .5s .5s, opacity .5s;
-  -moz-transition: top .4s, bottom .5s .5s, opacity .5s;
-  -webkit-transition: top .4s, bottom .5s .5s, opacity .5s;
-  -ms-transition: top .4s, bottom .5s .5s, opacity .5s;
-  -o-transition: top .4s, bottom .5s .5s, opacity .5s;
-  transition: top .4s, bottom .5s .5s, opacity .5s;
+.portfolio .grid-6 p,.portfolio .grid-6 button {
+display: none;
 }
-figure h3{
-  top: -50px;
+.portfolio .grid-6 h3{
+
+}
+
+.portfolio .grid-6 img {
+  width: 400px;
+  float: left;
+  margin: 0 2em 0 0;
+}
+.portfolio .grid-12 h3 {
   text-align: center;
-   display: inline-block;
-  background: url(../img/paper_1.png);
-  opacity: 0;
 }
-figure p{
-  background: url(../img/paper_1.png);
-  bottom:-65px;
-  text-align: left;
-  display: inline-block;
-  opacity: 0;
+.portfolio .grid-12 img{
+  width: 300px;
 }
-figure:hover p{
-  bottom: 0px;
-  opacity: 100;
-}
-figure:hover h3{
-  top: 0px;
-  opacity: 100;
-}
-.end p,.end h3, .end img{
-    width: 100%;
-    max-width: 375px;
-}
-.mag p,.mag h3, .mag img{
-    width: 100%;
-    max-width: 364px;
-    margin:auto;
-}
-.rand p,.rand h3, .rand img{
-  width: 100%;
-  max-width: 700px;
-}
-.intr p,.intr h3, .intr img{
-  width: 100%;
-  max-width: 386px;
-}
-@media screen and (max-width:768px){
-  nav li{
-    white-space: nowrap;
-    margin: 0 4%;
-  }
-  .med{
-    width: 100%;
-  }
-  .medim{
-    width: 50%;
-  }
-}
-@media screen and (max-width:480px){
-  .med{
-    width: 100%;
-    max-width: 100%;
-  }
-  .medim{
-    width: 75%;
-    max-width: 75%;
-  }
-   nav li{
-    display: inline-block;
-    float: none;
-    width: 100%;
-  }
-  .rand p{
-    bottom: 30px;
-  }
-  .control-button{
-   bottom: -125px;
-   position: relative;
-  }
+.hide {
+  display: none;
 }
