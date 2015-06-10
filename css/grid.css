@@ -15,13 +15,6 @@ img {
 		padding-right: 10px;
 		margin-left: 2%;
 	}
-	.grid-container > [class^="grid-"]:first-child {
-		margin-left: 0;
-	}
-	.grid-container > [class^="grid-"]:last-child {
-		float: right;
-	}
-
 /*
  Width: 1000px
  # Columns : 12 

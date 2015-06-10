@@ -12,14 +12,12 @@ $('#grid').click( function(){
 	$('.portfolio article').removeClass('grid-12');
 	$('.portfolio article').addClass('grid-6');
 
-})
-
-$('#contact').click(function(){
-	$('.form').removeClass('hide');
 
 })
-
-$('#remove').click(function(){
-	$('.form').addClass('hide');
-
-})
+new jBox('Modal', {
+    width: 300,
+    height: 200,
+    attach: $('#contact'),
+    title: 'Contact Me',
+    content: $('#content')
+});
